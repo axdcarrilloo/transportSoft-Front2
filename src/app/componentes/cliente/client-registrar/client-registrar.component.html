@@ -1,0 +1,16 @@
+
+<div class="divPrincipal">
+    <form class="formularioRegistrar" [formGroup]="clienteForm" (ngSubmit)="registrar()">
+        <div class="divCampos">
+            <input type="text" class="form-control inputLogin" placeholder="Tipo de Documento" formControlName="tipoDocumento"/>
+            <input type="number" class="form-control inputLogin" placeholder="Documento" formControlName="documento"/>
+            <input type="text" class="form-control inputLogin" placeholder="Nombres" formControlName="nombres"/>
+            <input type="text" class="form-control inputLogin" placeholder="Apellidos" formControlName="apellidos"/>
+            <input type="text" class="form-control inputLogin" placeholder="Direccion" formControlName="direccion"/>
+            <input type="text" class="form-control inputLogin" placeholder="Ciudad" formControlName="ciudad"/>
+            <input type="email" class="form-control inputLogin" placeholder="Correo" formControlName="correo"/>
+            <input type="number" class="form-control inputLogin" placeholder="Telefono" formControlName="telefono"/>
+        </div>
+        <button type="submit" class="btn btn-primary btnRegistrar"> Registrar </button>
+    </form>
+</div>
