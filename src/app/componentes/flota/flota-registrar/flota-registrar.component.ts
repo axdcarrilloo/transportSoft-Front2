@@ -30,7 +30,6 @@ export class FlotaRegistrarComponent implements OnInit {
   }
 
   registrar(): void {
-    console.log(this.flotaForm.value);
     const flota = new FlotaRegistrarDto(this.flotaForm.value.numero, this.flotaForm.value.desripcion,
       this.flotaForm.value.capitan)
     ;

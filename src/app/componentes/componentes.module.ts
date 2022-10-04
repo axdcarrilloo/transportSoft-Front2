@@ -11,10 +11,12 @@ import { CamionRegistrarComponent } from './camion/camion-registrar/camion-regis
 import { CamionConsultarComponent } from './camion/camion-consultar/camion-consultar.component';
 import { FlotaRegistrarComponent } from './flota/flota-registrar/flota-registrar.component';
 import { FlotaConsultarComponent } from './flota/flota-consultar/flota-consultar.component';
+import { BodegaRegistrarComponent } from './bodega/bodega-registrar/bodega-registrar.component';
+import { BodegaConsultarComponent } from './bodega/bodega-consultar/bodega-consultar.component';
 
 @NgModule({
   declarations: [
-    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent, FlotaRegistrarComponent, FlotaConsultarComponent
+    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent, FlotaRegistrarComponent, FlotaConsultarComponent, BodegaRegistrarComponent, BodegaConsultarComponent
   ],
   imports: [
     CommonModule, ReactiveFormsModule, AppRoutingModule, ServiciosModule

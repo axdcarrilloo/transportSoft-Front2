@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BodegaConsultarComponent } from './componentes/bodega/bodega-consultar/bodega-consultar.component';
+import { BodegaRegistrarComponent } from './componentes/bodega/bodega-registrar/bodega-registrar.component';
 
 import { CamionConsultarComponent } from './componentes/camion/camion-consultar/camion-consultar.component';
 import { CamionRegistrarComponent } from './componentes/camion/camion-registrar/camion-registrar.component';
@@ -9,8 +11,9 @@ import { FlotaConsultarComponent } from './componentes/flota/flota-consultar/flo
 import { FlotaRegistrarComponent } from './componentes/flota/flota-registrar/flota-registrar.component';
 
 
-
 const routes: Routes = [
+  { path: 'bodega-consultar', component: BodegaConsultarComponent },
+  { path: 'bodega-registrar', component: BodegaRegistrarComponent },
   { path: 'flota-consultar', component: FlotaConsultarComponent },
   { path: 'flota-registrar', component: FlotaRegistrarComponent },
   { path: 'camion-consultar', component: CamionConsultarComponent },

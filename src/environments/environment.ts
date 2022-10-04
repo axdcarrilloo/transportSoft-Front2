@@ -12,7 +12,10 @@ export const environment = {
   CAMION_CONSULTAR_TODOS: "http://localhost:9091/TransportSoft/Camion/Todos",
   FLOTA_REGISTRAR: "http://localhost:9091/TransportSoft/Flota/Registrar",
   FLOTA_ELIMINAR: "http://localhost:9091/TransportSoft/Flota/Eliminar/",
-  FLOTA_CONSULTAR_TODAS: "http://localhost:9091/TransportSoft/Flota/Todas"
+  FLOTA_CONSULTAR_TODAS: "http://localhost:9091/TransportSoft/Flota/Todas",
+  BODEGA_REGISTRAR: "http://localhost:9091/TransportSoft/Bodega/Registrar",
+  BODEGA_ELIMINAR: "http://localhost:9091/TransportSoft/Bodega/Eliminar/",
+  BODEGA_CONSULTAR_TODAS: "http://localhost:9091/TransportSoft/Bodega/Todas"
 };
 
 /*

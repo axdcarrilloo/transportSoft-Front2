@@ -1,0 +1,29 @@
+
+
+<table class="table tbTablaConsulta">
+    <thead>
+      <tr>
+        <th hidden="true" scope="col">Id</th>
+        <th scope="col"> Nombre </th>
+        <th scope="col"> Direccion </th>
+        <th scope="col"> Ciudad </th>
+        <th scope="col"> Acciones </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let bodega of bodegas; let i = index">
+        <td hidden="true"> {{ bodega.id }} </td>
+        <td> {{ bodega.nombre }} </td>
+        <td> {{ bodega.direccion }} </td>
+        <td> {{ bodega.ciudad }} </td>
+        <td>
+          <a>
+            <img src="../../../../assets/icon/modificar.png" id="imgModificar" title="Modificar" alt="Bootstrap" width="28" height="28">
+          </a>
+          <a (click)="eliminar(bodega.id)">
+            <img src="../../../../assets/icon/eliminar.png" id="imgEliminar" title="Eliminar" alt="Bootstrap" width="26" height="28">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>

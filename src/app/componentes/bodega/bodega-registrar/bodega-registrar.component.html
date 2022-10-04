@@ -1,0 +1,11 @@
+
+<div class="divPrincipal">
+    <form class="formularioRegistrar" [formGroup]="bodegaForm" (ngSubmit)="registrar()">
+        <div class="divCampos">
+            <input type="text" class="form-control inputLogin" placeholder="Nombre" formControlName="nombre"/>
+            <input type="text" class="form-control inputLogin" placeholder="Direccion" formControlName="direccion"/>
+            <input type="text" class="form-control inputLogin" placeholder="Ciudad" formControlName="ciudad"/>
+        </div>
+        <button type="submit" class="btn btn-primary btnRegistrar"> Registrar </button>
+    </form>
+</div>
