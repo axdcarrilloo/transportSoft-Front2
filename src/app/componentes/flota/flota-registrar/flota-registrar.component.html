@@ -1,0 +1,11 @@
+
+<div class="divPrincipal">
+    <form class="formularioRegistrar" [formGroup]="flotaForm" (ngSubmit)="registrar()">
+        <div class="divCampos">
+            <input type="text" class="form-control inputLogin" placeholder="Numero" formControlName="numero"/>
+            <input type="text" class="form-control inputLogin" placeholder="Descripcion" formControlName="desripcion"/>
+            <input type="text" class="form-control inputLogin" placeholder="Capitan" formControlName="capitan"/>
+        </div>
+        <button type="submit" class="btn btn-primary btnRegistrar"> Registrar </button>
+    </form>
+</div>

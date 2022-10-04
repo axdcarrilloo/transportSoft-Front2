@@ -9,16 +9,18 @@ import { ServiciosModule } from '../servicios/servicios.module';
 import { ClienteConsultarComponent } from './cliente/cliente-consultar/cliente-consultar.component';
 import { CamionRegistrarComponent } from './camion/camion-registrar/camion-registrar.component';
 import { CamionConsultarComponent } from './camion/camion-consultar/camion-consultar.component';
+import { FlotaRegistrarComponent } from './flota/flota-registrar/flota-registrar.component';
+import { FlotaConsultarComponent } from './flota/flota-consultar/flota-consultar.component';
 
 @NgModule({
   declarations: [
-    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent
+    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent, FlotaRegistrarComponent, FlotaConsultarComponent
   ],
   imports: [
     CommonModule, ReactiveFormsModule, AppRoutingModule, ServiciosModule
   ],
   exports: [
-    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent
+    MenuPrincipalComponent
   ]
 })
 export class ComponentesModule { }
