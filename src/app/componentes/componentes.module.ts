@@ -13,10 +13,12 @@ import { FlotaRegistrarComponent } from './flota/flota-registrar/flota-registrar
 import { FlotaConsultarComponent } from './flota/flota-consultar/flota-consultar.component';
 import { BodegaRegistrarComponent } from './bodega/bodega-registrar/bodega-registrar.component';
 import { BodegaConsultarComponent } from './bodega/bodega-consultar/bodega-consultar.component';
+import { PuertoRegistrarComponent } from './puerto/puerto-registrar/puerto-registrar.component';
+import { PuertoConsultarComponent } from './puerto/puerto-consultar/puerto-consultar.component';
 
 @NgModule({
   declarations: [
-    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent, FlotaRegistrarComponent, FlotaConsultarComponent, BodegaRegistrarComponent, BodegaConsultarComponent
+    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent, FlotaRegistrarComponent, FlotaConsultarComponent, BodegaRegistrarComponent, BodegaConsultarComponent, PuertoRegistrarComponent, PuertoConsultarComponent
   ],
   imports: [
     CommonModule, ReactiveFormsModule, AppRoutingModule, ServiciosModule

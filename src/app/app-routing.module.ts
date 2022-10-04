@@ -9,9 +9,13 @@ import { ClientRegistrarComponent } from './componentes/cliente/client-registrar
 import { ClienteConsultarComponent } from './componentes/cliente/cliente-consultar/cliente-consultar.component';
 import { FlotaConsultarComponent } from './componentes/flota/flota-consultar/flota-consultar.component';
 import { FlotaRegistrarComponent } from './componentes/flota/flota-registrar/flota-registrar.component';
+import { PuertoConsultarComponent } from './componentes/puerto/puerto-consultar/puerto-consultar.component';
+import { PuertoRegistrarComponent } from './componentes/puerto/puerto-registrar/puerto-registrar.component';
 
 
 const routes: Routes = [
+  { path: 'puerto-consultar', component: PuertoConsultarComponent },
+  { path: 'puerto-registrar', component: PuertoRegistrarComponent },
   { path: 'bodega-consultar', component: BodegaConsultarComponent },
   { path: 'bodega-registrar', component: BodegaRegistrarComponent },
   { path: 'flota-consultar', component: FlotaConsultarComponent },

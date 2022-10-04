@@ -10,16 +10,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr  *ngFor="let bodega of bodegas; let i = index">
-        <td hidden="true"> {{ bodega.id }} </td>
-        <td> {{ bodega.nombre }} </td>
-        <td> {{ bodega.direccion }} </td>
-        <td> {{ bodega.ciudad }} </td>
+      <tr  *ngFor="let puerto of puertos; let i = index">
+        <td hidden="true"> {{ puerto.id }} </td>
+        <td> {{ puerto.nombre }} </td>
+        <td> {{ puerto.direccion }} </td>
+        <td> {{ puerto.ciudad }} </td>
         <td>
           <a>
             <img src="../../../../assets/icon/modificar.png" id="imgModificar" title="Modificar" alt="Bootstrap" width="28" height="28">
           </a>
-          <a (click)="eliminar(bodega.id)">
+          <a (click)="eliminar(puerto.id)">
             <img src="../../../../assets/icon/eliminar.png" id="imgEliminar" title="Eliminar" alt="Bootstrap" width="26" height="28">
           </a>
         </td>
