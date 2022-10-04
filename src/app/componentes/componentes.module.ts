@@ -7,10 +7,12 @@ import { MenuPrincipalComponent } from './menu-principal/menu-principal.componen
 import { ClientRegistrarComponent } from './cliente/client-registrar/client-registrar.component';
 import { ServiciosModule } from '../servicios/servicios.module';
 import { ClienteConsultarComponent } from './cliente/cliente-consultar/cliente-consultar.component';
+import { CamionRegistrarComponent } from './camion/camion-registrar/camion-registrar.component';
+import { CamionConsultarComponent } from './camion/camion-consultar/camion-consultar.component';
 
 @NgModule({
   declarations: [
-    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent
+    MenuPrincipalComponent, ClientRegistrarComponent, ClienteConsultarComponent, CamionRegistrarComponent, CamionConsultarComponent
   ],
   imports: [
     CommonModule, ReactiveFormsModule, AppRoutingModule, ServiciosModule

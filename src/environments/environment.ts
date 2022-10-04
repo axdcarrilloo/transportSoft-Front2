@@ -6,7 +6,10 @@ export const environment = {
   production: false,
   CLIENTE_REGISTRAR: "http://localhost:9091/TransportSoft/Cliente/Registrar",
   CLIENTE_CONSULTAR_TODOS: "http://localhost:9091/TransportSoft/Cliente/Todos",
-  CLIENTE_ELIMINAR: "http://localhost:9091/TransportSoft/Cliente/Eliminar/"
+  CLIENTE_ELIMINAR: "http://localhost:9091/TransportSoft/Cliente/Eliminar/",
+  CAMION_REGISTRAR: "http://localhost:9091/TransportSoft/Camion/Registrar",
+  CAMION_ELIMINAR: "http://localhost:9091/TransportSoft/Camion/Eliminar/",
+  CAMION_CONSULTAR_TODOS: "http://localhost:9091/TransportSoft/Camion/Todos"
 };
 
 /*

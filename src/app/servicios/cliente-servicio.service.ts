@@ -13,15 +13,15 @@ export class ClienteServicioService {
 
   constructor(private http: HttpClient) { }
 
-  eliminar(id: number): Observable<ResponseMainDto>{
+  eliminar(id: number): Observable<ResponseMainDto> {
     return this.http.delete<ResponseMainDto>(environment.CLIENTE_ELIMINAR + id);
   }
 
-  consultarTodos(): Observable<ResponseMainDto>{
+  consultarTodos(): Observable<ResponseMainDto> {
     return this.http.get<ResponseMainDto>(environment.CLIENTE_CONSULTAR_TODOS);
   }
 
-  registrar(cliente: ClienteRegistrarDto): Observable<ResponseMainDto>{
+  registrar(cliente: ClienteRegistrarDto): Observable<ResponseMainDto> {
     const header = new HttpHeaders();
     header.append('Content-Type', 'multipart/form-data');
     header.append('Accept', 'application/json');

@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ClienteRegistrarDto } from 'src/app/dtos/cliente-registrar';
@@ -28,9 +29,11 @@ export class ClientRegistrarComponent implements OnInit {
     this.clienteSvc.registrar(cliente).subscribe((data: ResponseMainDto) => {
       if(data != null) {
         console.log(data.mensaje);
-        this.clienteForm.reset();
       }
+    }, (error: HttpErrorResponse) => {
+      console.log(error.error.response);
     });
+    this.clienteForm.reset();
   }
 
   cargarFormulario(): FormGroup{

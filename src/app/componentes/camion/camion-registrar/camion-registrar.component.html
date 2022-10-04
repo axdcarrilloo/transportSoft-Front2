@@ -1,0 +1,11 @@
+
+<div class="divPrincipal">
+    <form class="formularioRegistrar" [formGroup]="camionForm" (ngSubmit)="registrar()">
+        <div class="divCampos">
+            <input type="text" class="form-control inputLogin" placeholder="Placa" formControlName="placa"/>
+            <input type="text" class="form-control inputLogin" placeholder="Descripcion" formControlName="desripcion"/>
+            <input type="text" class="form-control inputLogin" placeholder="Conductor" formControlName="conductor"/>
+        </div>
+        <button type="submit" class="btn btn-primary btnRegistrar"> Registrar </button>
+    </form>
+</div>
