@@ -27,7 +27,7 @@ export class ClientRegistrarComponent implements OnInit {
     ;
     this.clienteSvc.registrar(cliente).subscribe((data: ResponseMainDto) => {
       if(data != null) {
-        console.log(data);
+        console.log(data.mensaje);
         this.clienteForm.reset();
       }
     });

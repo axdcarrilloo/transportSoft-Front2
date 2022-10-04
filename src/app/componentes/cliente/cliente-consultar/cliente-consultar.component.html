@@ -12,15 +12,16 @@
     </thead>
     <tbody>
       <tr  *ngFor="let cliente of clientes; let i = index">
-        <td hidden="true"> {{cliente.documento}} </td>
+        <td hidden="true"> {{cliente.id}} </td>
+        <td> {{cliente.documento}} </td>
         <td> {{cliente.nombres}} {{cliente.apellidos}} </td>
         <td> {{cliente.telefono}} </td>
         <td> {{cliente.correo}} </td>
         <td>
-          <a data-bs-toggle="modal" data-bs-target="#modalModificar">
+          <a>
             <img src="../../../../assets/icon/modificar.png" id="imgModificar" title="Modificar" alt="Bootstrap" width="28" height="28">
           </a>
-          <a data-bs-toggle="modal" data-bs-target="#modalEliminar">
+          <a (click)="eliminar(cliente.id)">
             <img src="../../../../assets/icon/eliminar.png" id="imgEliminar" title="Eliminar" alt="Bootstrap" width="26" height="28">
           </a>
         </td>

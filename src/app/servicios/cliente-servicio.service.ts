@@ -13,6 +13,10 @@ export class ClienteServicioService {
 
   constructor(private http: HttpClient) { }
 
+  eliminar(id: number): Observable<ResponseMainDto>{
+    return this.http.delete<ResponseMainDto>(environment.CLIENTE_ELIMINAR + id);
+  }
+
   consultarTodos(): Observable<ResponseMainDto>{
     return this.http.get<ResponseMainDto>(environment.CLIENTE_CONSULTAR_TODOS);
   }
